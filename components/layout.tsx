@@ -22,7 +22,7 @@ import { NAVIGATION } from '@lib/constants';
 import styles from './layout.module.css';
 import Logo from './icons/icon-logo';
 import MobileMenu from './mobile-menu';
-import Footer, { HostedByVercel } from './footer';
+import Footer, { HostedOnEventLoop } from './footer';
 import ViewSource from '@components/view-source';
 
 type Props = {
@@ -56,7 +56,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
                 <Link key={name} href={route}>
                   <a
                     className={cn(styles.tab, {
-                      [styles['tab-active']]: activeRoute.startsWith(route)
+                      [styles['tab-active']]: activeRoute === route
                     })}
                   >
                     {name}
@@ -65,7 +65,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
               ))}
             </div>
             <div className={cn(styles['header-right'])}>
-              <HostedByVercel />
+              <HostedOnEventLoop />
             </div>
           </header>
         )}

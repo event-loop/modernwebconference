@@ -18,20 +18,20 @@ import cn from 'classnames';
 import styleUtils from './utils.module.css';
 import styles from './hero.module.css';
 import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+import Logo from './logos/Logo';
 
 export default function Hero() {
   return (
     <div className={styles.wrapper}>
-      <h2
+      <Logo
         className={cn(
           styleUtils.appear,
-          styleUtils['appear-third'],
+          styleUtils['appear-first'],
           styleUtils['show-on-mobile'],
-          styles.description
+          styles.logo
         )}
-      >
-        {SITE_DESCRIPTION}
-      </h2>
+      />
+
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
         {BRAND_NAME}
         {/* <br className={styleUtils['show-on-desktop']} /> global user conference */}
@@ -40,7 +40,7 @@ export default function Hero() {
         className={cn(
           styleUtils.appear,
           styleUtils['appear-third'],
-          styleUtils['show-on-tablet'],
+          // styleUtils['show-on-mobile'],
           styles.description
         )}
       >
