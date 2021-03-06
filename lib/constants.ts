@@ -21,9 +21,8 @@ export const BRAND_NAME = 'Modern Web Conference';
 export const SITE_NAME_MULTILINE = ['Modern Web Conference', 'Conf'];
 export const SITE_NAME = 'Modern Web Conference';
 export const META_DESCRIPTION =
-  'Summer 2021. Two weeks, 10 tracks, 100+ sessions. A free online conference that\'s more than just a livestream.';
-export const SITE_DESCRIPTION =
-  'A Free Conference for the Web Community';
+  "Summer 2021. Two weeks, 10 tracks, 100+ sessions. A free online conference that's more than just a livestream.";
+export const SITE_DESCRIPTION = 'A Free Conference for the Web Community';
 export const DATE = 'Summer 2021';
 export const SHORT_DATE = 'Summer 2021';
 export const FULL_DATE = 'Two weeks this summer 2021';
@@ -38,27 +37,13 @@ export const COPYRIGHT_HOLDER = process.env.NEXT_PUBLIC_COPYRIGHT_HOLDER;
 export const CODE_OF_CONDUCT =
   'https://www.notion.so/eventloopai/Modern-Web-Conference-Code-of-Conduct-05772283cc97450981bde84dba7be46a';
 export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
+export const BECOME_A_SPONSOR =
+  'https://www.notion.so/Modern-Web-Conference-May-2021-Sponsorship-Guide-8b1bbc71547c45e1b7e14782228b311e';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
-    name: 'Stage A',
-    route: '/stage/a'
-  },
-  {
-    name: 'Stage C',
-    route: '/stage/c'
-  },
-  {
-    name: 'Stage M',
-    route: '/stage/m'
-  },
-  {
-    name: 'Stage E',
-    route: '/stage/e'
-  },
-  {
-    name: 'Schedule',
-    route: '/schedule'
+    name: 'Home',
+    route: '/'
   },
   {
     name: 'Speakers',
@@ -67,10 +52,6 @@ export const NAVIGATION = [
   {
     name: 'Expo',
     route: '/expo'
-  },
-  {
-    name: 'Jobs',
-    route: '/jobs'
   }
 ];
 

@@ -78,7 +78,7 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
               )
             ) : (
               <>
-                You're in. <br /> Make it unique.
+                You're in! <br /> Make it unique.
               </>
             )}
           </h2>

@@ -57,7 +57,7 @@ export default function TicketVisual({
           />
         </div>
         <div className={styles.info}>
-          <TicketInfo logoTextSecondaryColor={ticketNumber ? 'var(--brand)' : undefined} />
+          <TicketInfo />
         </div>
         {ticketNumber && (
           <div className={styles['ticket-number-wrapper']}>

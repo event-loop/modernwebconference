@@ -27,6 +27,12 @@
   margin: 0 0 25px;
 }
 
+.logo {
+  max-width: 300px;
+  display: block;
+  margin: 2em auto;
+}
+
 .info {
   font-size: 20px;
   line-height: 1.4;
@@ -35,7 +41,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: var(--space-8x);
-  color: var(--brand);
+  color: var(--secondary-color);
 }
 
 .description {
@@ -44,7 +50,7 @@
   line-height: 1.4;
   text-align: center;
   margin: auto auto 30px;
-  color: var(--secondary-color);
+  color: var(--brand);
   max-width: 355px;
 }
 
@@ -73,7 +79,7 @@
   }
 
   .description {
-    font-size: var(--space-8x);
+    font-size: var(--space-6x);
     max-width: 531px;
     margin: 40px auto;
   }

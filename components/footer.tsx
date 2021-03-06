@@ -15,11 +15,11 @@
  */
 
 import cn from 'classnames';
-import VercelLogo from '@components/icons/icon-platform';
+import EventLoopLogo from '@components/logos/EventLoopLogo';
 import styles from './footer.module.css';
-import { COPYRIGHT_HOLDER, SITE_NAME, CODE_OF_CONDUCT, LEGAL_URL, REPO } from '@lib/constants';
+import { COPYRIGHT_HOLDER, CODE_OF_CONDUCT, LEGAL_URL, BECOME_A_SPONSOR } from '@lib/constants';
 
-export function HostedByVercel() {
+export function HostedOnEventLoop() {
   return (
     <a
       href="https://vercel.com"
@@ -27,8 +27,8 @@ export function HostedByVercel() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className={styles['secondary-text']}>Hosted by </div>
-      <VercelLogo color="white" />
+      <div className={styles['secondary-text']}>Hosted on </div>
+      <EventLoopLogo />
     </a>
   );
 }
@@ -38,7 +38,7 @@ export default function Footer() {
     <footer className={cn(styles.footer)}>
       <div className={styles['footer-legal']}>
         <div className={styles['footer-hostedby']}>
-          <HostedByVercel />
+          <HostedOnEventLoop />
           <div className={styles['footer-separator']} />
         </div>
         <div className={styles['footer-copyright']}>
@@ -48,12 +48,12 @@ export default function Footer() {
         <div className={styles['footer-center-group']}>
           <p className={styles['footer-paragraph']}>
             <a
-              href={REPO}
+              href={BECOME_A_SPONSOR}
               className={styles['footer-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Source Code
+              Become a Sponsor
             </a>
           </p>
           <div className={styles['footer-separator']} />
