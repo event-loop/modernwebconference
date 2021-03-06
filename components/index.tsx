@@ -36,6 +36,7 @@ export default function Conf({
   const [userData, setUserData] = useState<UserData>(defaultUserData);
   const [pageState, setPageState] = useState<PageState>(defaultPageState);
 
+  console.info('user', userData);
   return (
     <ConfDataContext.Provider
       value={{
