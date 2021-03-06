@@ -36,7 +36,7 @@
 }
 
 .footer-logo :global(svg) {
-  height: var(--space-4x);
+  height: 20px;
   transform: translateY(5px);
   margin-left: 2px;
 }

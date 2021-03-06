@@ -37,6 +37,8 @@ export const COPYRIGHT_HOLDER = process.env.NEXT_PUBLIC_COPYRIGHT_HOLDER;
 export const CODE_OF_CONDUCT =
   'https://www.notion.so/eventloopai/Modern-Web-Conference-Code-of-Conduct-05772283cc97450981bde84dba7be46a';
 export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
+export const BECOME_A_SPONSOR =
+  'https://www.notion.so/Modern-Web-Conference-May-2021-Sponsorship-Guide-8b1bbc71547c45e1b7e14782228b311e';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {

@@ -17,7 +17,7 @@
 import cn from 'classnames';
 import EventLoopLogo from '@components/logos/EventLoopLogo';
 import styles from './footer.module.css';
-import { COPYRIGHT_HOLDER, SITE_NAME, CODE_OF_CONDUCT, LEGAL_URL, REPO } from '@lib/constants';
+import { COPYRIGHT_HOLDER, CODE_OF_CONDUCT, LEGAL_URL, BECOME_A_SPONSOR } from '@lib/constants';
 
 export function HostedOnEventLoop() {
   return (
@@ -28,7 +28,7 @@ export function HostedOnEventLoop() {
       rel="noopener noreferrer"
     >
       <div className={styles['secondary-text']}>Hosted on </div>
-      <EventLoopLogo color="white" />
+      <EventLoopLogo />
     </a>
   );
 }
@@ -48,12 +48,12 @@ export default function Footer() {
         <div className={styles['footer-center-group']}>
           <p className={styles['footer-paragraph']}>
             <a
-              href={REPO}
+              href={BECOME_A_SPONSOR}
               className={styles['footer-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Source Code
+              Become a Sponsor
             </a>
           </p>
           <div className={styles['footer-separator']} />
