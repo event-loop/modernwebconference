@@ -22,7 +22,7 @@ import { COPYRIGHT_HOLDER, CODE_OF_CONDUCT, LEGAL_URL, BECOME_A_SPONSOR } from '
 export function HostedOnEventLoop() {
   return (
     <a
-      href="https://vercel.com"
+      href="https://eventloop.app"
       className={cn(styles['footer-link'], styles['footer-logo'])}
       target="_blank"
       rel="noopener noreferrer"

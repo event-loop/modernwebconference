@@ -32,7 +32,7 @@ export default function Hero() {
         )}
       />
 
-      <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
+      <h1 className={cn(styleUtils.appear, styleUtils['appear-second'], styles.hero)}>
         {BRAND_NAME}
         {/* <br className={styleUtils['show-on-desktop']} /> global user conference */}
       </h1>
