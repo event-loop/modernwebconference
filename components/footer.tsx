@@ -27,7 +27,7 @@ export function HostedByVercel() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className={styles['secondary-text']}>Created by </div>
+      <div className={styles['secondary-text']}>Hosted by </div>
       <VercelLogo color="white" />
     </a>
   );
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className={styles['footer-separator']} />
         </div>
         <div className={styles['footer-copyright']}>
-          Copyright © {`${new Date().getFullYear()} `} {COPYRIGHT_HOLDER || `${SITE_NAME}.`} All
+          Copyright © {`${new Date().getFullYear()} `} {COPYRIGHT_HOLDER || `Event Loop, Inc.`} All
           rights reserved.
         </div>
         <div className={styles['footer-center-group']}>

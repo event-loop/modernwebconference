@@ -1,7 +1,7 @@
 {
-  "name": "Virtual Event Starter Kit",
-  "short_name": "Virtual Event Starter Kit",
-  "description": "Virtual Event Starter Kit -> https://demo.vercel.events",
+  "name": "Modern Web Conference",
+  "short_name": "Modern Web Conference",
+  "description": "Modern Web Conference -> https://modernwebconference.com",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",
