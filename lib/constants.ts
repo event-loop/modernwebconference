@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export const SITE_URL = 'https://modernwebconference.com';
+export const SITE_URL = 'https://modernwebconference.vercel.app';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
 export const TWITTER_USER_NAME = 'modernwebcon';
 export const BRAND_NAME = 'Modern Web Conference';
@@ -26,7 +26,7 @@ export const SITE_DESCRIPTION = 'A Free Conference for the Web Community';
 export const DATE = 'Summer 2021';
 export const SHORT_DATE = 'Summer 2021';
 export const FULL_DATE = 'Two weeks this summer 2021';
-export const TWEET_TEXT = META_DESCRIPTION;
+export const TWEET_TEXT = `Join me at the Modern Web Conference this summer! Click here to register free`;
 export const COOKIE = 'user-id';
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
