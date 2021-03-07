@@ -38,22 +38,30 @@ export default function TicketShare({ username, ticketNumber, name, usernameFrom
 
   const meta = username
     ? {
-        title: `${name}’s ${SITE_NAME} Ticket`,
-        description: META_DESCRIPTION,
+        title: `${name}’s Modern Web Conference Ticket`,
+        description: `${META_DESCRIPTION} ${SITE_URL}/tickets/${username}`,
         image: `/api/ticket-images/${username}`,
-        url: `${SITE_URL}/tickets/${username}`
+        url: `${SITE_URL}/tickets/${username}`,
+        ticketMetaDescription: `Join ${username} at the Modern Web Conference this summer! Click here to register free`
       }
     : {
-        title: 'Ticket Modern Web Conference',
+        title: 'Modern Web Conference Ticket',
         description: META_DESCRIPTION,
         image: `/api/ticket-images/${usernameFromParams}`,
-        url: `${SITE_URL}/tickets/${usernameFromParams}`
+        url: `${SITE_URL}/tickets/${usernameFromParams}`,
+        ticketMetaDescription: `Join me at the Modern Web Conference this summer! Click here to register free`
       };
 
   return (
     <Page meta={meta}>
       <Head>
         <meta name="robots" content="noindex" />
+        <meta
+          property="og:description"
+          content={`Join me at the Modern Web Conference this summer! It's a free virtual event taking place on EventLoop. Check out the website to see the speakers and schedule, & get your free ticket! ${meta.url}`}
+        />
+        <meta property="twitter:description" content={meta.ticketMetaDescription} />
+        <meta property="twitter:title" content={meta.title} />
       </Head>
       <SkipNavContent />
       <ConfContent

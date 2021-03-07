@@ -17,12 +17,14 @@
 import Redis from 'ioredis';
 import crypto from 'crypto';
 
+console.log('REDIS', process.env.REDIS_PORT, process.env.REDIS_URL, process.env.REDIS_PASSWORD);
 const redis =
   process.env.REDIS_PORT && process.env.REDIS_URL && process.env.REDIS_EMAIL_TO_ID_SECRET
     ? new Redis({
         port: parseInt(process.env.REDIS_PORT || '', 10),
         host: process.env.REDIS_URL,
-        password: process.env.REDIS_PASSWORD
+        password: process.env.REDIS_PASSWORD,
+        tls: {}
       })
     : undefined;
 

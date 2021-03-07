@@ -62,7 +62,7 @@ export default async function register(
   if (redis) {
     id = emailToId(email);
     const existingTicketNumberString = await redis.hget(`id:${id}`, 'ticketNumber');
-
+    console.log('Existing Ticket Number', existingTicketNumberString);
     if (existingTicketNumberString) {
       const item = await redis.hmget(`id:${id}`, 'name', 'username', 'createdAt');
       name = item[0]!;
@@ -73,6 +73,7 @@ export default async function register(
     } else {
       ticketNumber = await redis.incr('count');
       createdAt = Date.now();
+
       await redis.hmset(
         `id:${id}`,
         'email',
