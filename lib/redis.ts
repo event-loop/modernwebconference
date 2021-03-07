@@ -17,7 +17,6 @@
 import Redis from 'ioredis';
 import crypto from 'crypto';
 
-console.log('REDIS', process.env.REDIS_PORT, process.env.REDIS_URL, process.env.REDIS_PASSWORD);
 const redis =
   process.env.REDIS_PORT && process.env.REDIS_URL && process.env.REDIS_EMAIL_TO_ID_SECRET
     ? new Redis({
