@@ -24,7 +24,6 @@ type Props = {
 };
 
 export default function SpeakersGrid({ speakers }: Props) {
-  console.log(speakers);
   return (
     <div className={styles.grid}>
       {speakers.map(speaker => (
