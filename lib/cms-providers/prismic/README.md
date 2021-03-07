@@ -12,7 +12,7 @@ yarn global add prismic-cli
 
 > Note: make sure to update to least version `3.8.4` of the `prismic-cli` if you already have it installed on your machine.
 
-Then you can clone the project and launch a Prismic repository.
+Then you can clone the project and launch a Prismic repository. 
 
 ```bash
 prismic theme --theme-url https://github.com/vercel/virtual-event-starter-kit/archive/main.zip --conf lib/cms-providers/prismic/README.md --custom-types lib/cms-providers/prismic/custom_types --documents lib/cms-providers/prismic/documents
