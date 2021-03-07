@@ -29,6 +29,7 @@ export type Speaker = {
   talk: Talk;
   image: Image;
   imageSquare: Image;
+  iscurator?: boolean;
 };
 
 export type Stage = {

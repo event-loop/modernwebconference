@@ -74,6 +74,7 @@ export default function SpeakerSection({ speaker }: Props) {
               {`${speaker.title} @ `}
               <span className={styles.company}>{speaker.company}</span>
             </p>
+            {speaker.iscurator ? <div className={styles.curator}>curator</div> : null}
             <h2 className={styles['bio-header']}>Bio</h2>
             <p className={styles.bio}>{speaker.bio}</p>
             <h3 className={styles['socials-header']}>Social Media</h3>

@@ -24,6 +24,7 @@ type Props = {
 };
 
 export default function SpeakersGrid({ speakers }: Props) {
+  console.log(speakers);
   return (
     <div className={styles.grid}>
       {speakers.map(speaker => (
@@ -40,6 +41,7 @@ export default function SpeakersGrid({ speakers }: Props) {
                 width={300}
                 height={300}
               />
+              {speaker.iscurator ? <div className={styles.curator}>Curator</div> : null}
             </div>
             <div className={styles.cardBody}>
               <div>

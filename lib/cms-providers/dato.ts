@@ -52,6 +52,7 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
         twitter
         github
         company
+        iscurator
         talk {
           title
           description

@@ -23,6 +23,11 @@
   flex-direction: column;
 }
 
+.logo {
+  display: none;
+  width: 40px;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -44,7 +49,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   background: var(--sidebar);
   border-bottom: 1px solid var(--accents-7);
   height: var(--header-height);
@@ -71,10 +76,13 @@
 
 .tabs {
   height: 100%;
-  display: none;
+  /* display: none; */
 }
 
 @media screen and (min-width: 1032px) {
+  .logo {
+    display: flex;
+  }
   .tabs {
     display: initial;
   }
@@ -86,6 +94,11 @@
   }
 }
 
+@media screen and (min-width: 640px) {
+  .header {
+    justify-content: space-between;
+  }
+}
 .tab {
   text-transform: uppercase;
   padding: var(--space-4x);
@@ -109,9 +122,4 @@
   color: #fff;
   background: linear-gradient(90deg, var(--brand), var(--brand)) left bottom transparent no-repeat;
   background-size: 100% 1px;
-}
-
-.logo {
-  display: flex;
-  width: 40px;
 }
