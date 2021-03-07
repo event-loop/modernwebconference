@@ -1,10 +1,10 @@
 {
-  "name": "Virtual Event Starter Kit",
-  "description": "Fully customizable starter kit for your virtual event.",
-  "previewImage": "https://demo.vercel.events/twitter-card.png",
+  "name": "Modern Web Conference",
+  "description": "Summer 2021. Two weeks, 10 tracks, 100+ sessions. A free online conference that's more than just a livestream.",
+  "previewImage": "https://modernwebconference.com/twitter-card.png",
   "datocmsProjectId": "37685",
   "deploymentType": "vercel",
   "buildCommand": "npm run build",
   "datocmsApiTokenEnvName": "DATOCMS_READ_ONLY_API_TOKEN",
-  "livePreviewUrl": "https://demo.vercel.events/"
+  "livePreviewUrl": "https://modernwebconference.com"
 }
