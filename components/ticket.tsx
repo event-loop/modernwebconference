@@ -85,7 +85,7 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
           <p className={cn(styles.description, styleUtils.appear, styleUtils['appear-second'])}>
             {sharePage ? (
               <>
-                Join {name ?? 'them '}  this summer!.
+                Join {name ?? 'them '}  this summer!
               </>
             ) : (
               <>
