@@ -2,7 +2,7 @@
 
 # [Virtual Event Starter Kit](https://vercel.com/virtual-event-starter-kit)
 
-### Demo: https://demo.vercel.events 
+### Demo: https://demo.vercel.events  
 
 This virtual event starter kit was used to run [Next.js Conf 2020](https://nextjs.org/2020/conf), which had almost 40,000 live attendees. It includes the following features:
 
