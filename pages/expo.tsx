@@ -38,7 +38,7 @@ export default function ExpoPage({ sponsors }: Props) {
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero="Sponsors" description="expo subheader text placeholder" />
+        <Header hero="Sponsors" description="Ranging from physical products and services to devtools and consultancies, all of our sponsors share one thing in common: they are on the cutting edge of web development. Click on a company to learn more about them, and check the jobs tab to see if they're hiring." />
         <SponsorsGrid sponsors={sponsors} />
       </Layout>
     </Page>
