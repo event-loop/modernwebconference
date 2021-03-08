@@ -37,7 +37,7 @@ export default function Speakers({ speakers }: Props) {
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero="Speakers" description="speakers subheader text placeholder" />
+        <Header hero="Speakers" description="Whether you’re interested in learning a new technology or advancing your skills in a familiar stack, there’s something for everyone at the Modern Web Conference. All talks are curated by a diverse team of experts well-known for their knowledge in and contributions to their industry &amp; specialization." />
         <SpeakersGrid speakers={speakers} />
       </Layout>
     </Page>
