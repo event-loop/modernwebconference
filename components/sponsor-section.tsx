@@ -26,7 +26,6 @@ type Props = {
 };
 
 export default function SponsorSection({ sponsor }: Props) {
-  console.log(sponsor);
   return (
     <>
       <Link href="/expo">
