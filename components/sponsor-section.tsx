@@ -85,7 +85,9 @@ export default function SponsorSection({ sponsor }: Props) {
             </a>
           </div>
           <div className={styles.resources}>
-            {/* <h2 className={styles.heading}>Resources</h2>
+            {sponsor.links && sponsor.links.length > 0 ? (
+              <h2 className={styles.heading}>Resources</h2>
+            ) : null}
             {sponsor.links.map(link => (
               <a
                 key={link.url}
@@ -111,7 +113,7 @@ export default function SponsorSection({ sponsor }: Props) {
                   <path d="M10 14L21 3" />
                 </svg>
               </a>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
