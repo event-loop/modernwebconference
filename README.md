@@ -11,7 +11,7 @@ This virtual event starter kit was used to run [Next.js Conf 2020](https://nextj
 - Career Fair, allowing attendees to network and find job opportunties
 - Ticket registration and generation
 - Speaker pages and bios
-- Schedule
+- Schedule 
 
 This platform is built upon three principles:
 
