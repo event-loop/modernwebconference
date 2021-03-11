@@ -26,6 +26,7 @@ type Props = {
 };
 
 export default function SponsorSection({ sponsor }: Props) {
+  console.log(sponsor);
   return (
     <>
       <Link href="/expo">
@@ -83,7 +84,19 @@ export default function SponsorSection({ sponsor }: Props) {
             >
               {sponsor.callToAction}
             </a>
+            {sponsor.discord ? (
+              <a
+                href={sponsor.discord}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                className={cn(styles.button, styles['button-link'])}
+              >
+                Chat on Discord
+              </a>
+            ) : null}
           </div>
+
           <div className={styles.resources}>
             {sponsor.links && sponsor.links.length > 0 ? (
               <h2 className={styles.heading}>Resources</h2>
