@@ -42,14 +42,14 @@ export default function TicketShare({ username, ticketNumber, name, usernameFrom
         description: `${META_DESCRIPTION} ${SITE_URL}/tickets/${username}`,
         image: `/api/ticket-images/${username}`,
         url: `${SITE_URL}/tickets/${username}`,
-        ticketMetaDescription: `Join ${username} at the Modern Web Conference this summer! Click here to register free`
+        ticketMetaDescription: `Join ${username} at the Modern Web Conference this summer on EventLoop! Click here to register free`
       }
     : {
         title: 'Modern Web Conference Ticket',
         description: META_DESCRIPTION,
         image: `/api/ticket-images/${usernameFromParams}`,
         url: `${SITE_URL}/tickets/${usernameFromParams}`,
-        ticketMetaDescription: `Join me at the Modern Web Conference this summer! Click here to register free`
+        ticketMetaDescription: `Join me at the @ModernWebCon this summer! Click here to register free`
       };
 
   return (
