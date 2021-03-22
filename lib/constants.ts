@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export const SITE_URL = 'https://modernwebconference.vercel.app';
+export const SITE_URL = 'https://modernwebconference.com';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
 export const TWITTER_USER_NAME = 'modernwebcon';
 export const BRAND_NAME = 'Modern Web Conference';
